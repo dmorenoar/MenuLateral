@@ -17,6 +17,7 @@
 		33AF8DBB21C40F22000916DF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AF8DB921C40F22000916DF /* SWRevealViewController.m */; };
 		33AF8DBD21C416EC000916DF /* TableViewCellCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF8DBC21C416EC000916DF /* TableViewCellCustom.swift */; };
 		33AF8DBF21C41834000916DF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF8DBE21C41834000916DF /* TableViewController.swift */; };
+		33C96DBE21C43BFF002108BC /* ViewControllerAboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C96DBD21C43BFF002108BC /* ViewControllerAboutUs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		33AF8DBA21C40F22000916DF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../../Documents/SWRevealViewController/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
 		33AF8DBC21C416EC000916DF /* TableViewCellCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCustom.swift; sourceTree = "<group>"; };
 		33AF8DBE21C41834000916DF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		33C96DBD21C43BFF002108BC /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				33AF8DB821C40F21000916DF /* MenuLateral-Bridging-Header.h */,
 				33AF8DBC21C416EC000916DF /* TableViewCellCustom.swift */,
 				33AF8DBE21C41834000916DF /* TableViewController.swift */,
+				33C96DBD21C43BFF002108BC /* ViewControllerAboutUs.swift */,
 			);
 			path = MenuLateral;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				33AF8D8A21C40E33000916DF /* ViewController.swift in Sources */,
 				33AF8D8821C40E33000916DF /* AppDelegate.swift in Sources */,
+				33C96DBE21C43BFF002108BC /* ViewControllerAboutUs.swift in Sources */,
 				33AF8DBD21C416EC000916DF /* TableViewCellCustom.swift in Sources */,
 				33AF8DBF21C41834000916DF /* TableViewController.swift in Sources */,
 				33AF8DBB21C40F22000916DF /* SWRevealViewController.m in Sources */,

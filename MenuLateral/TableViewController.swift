@@ -21,6 +21,7 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     // MARK: - Table view data source
@@ -44,7 +45,27 @@ class TableViewController: UITableViewController {
         
         // Configure the cell...
 
+        
+        
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let revealViewController:SWRevealViewController = self.revealViewController()
+        
+        
+        
+        
+        let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyBoard.instantiateViewController(withIdentifier: "aboutUs") as! ViewControllerAboutUs
+        
+        let present = UINavigationController.init(rootViewController: vc)
+        
+        revealViewController()?.pushFrontViewController(present, animated: true)
+        
     }
     
 
@@ -83,14 +104,24 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+       /* var viewDest = segue.destination as! ViewControllerAboutUs
+        
+        var indexPath = self.tableView.indexPathForSelectedRow
+        
+        viewDest.sectionIndex = (indexPath?.row)!
+        */
+        
+       
+        
     }
-    */
+    
 
 }

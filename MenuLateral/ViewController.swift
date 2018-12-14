@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         sideMenus()
+        
+  
+        navigationController?.navigationBar.tintColor = UIColor.gray
+        
+        navigationController?.navigationBar.barTintColor = UIColor.gray
+        
+        navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.foregroundColor: UIColor.white]
     }
 
     func sideMenus(){
