@@ -8,13 +8,33 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
+
+    @IBOutlet weak var btnMenu: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        sideMenus()
     }
 
+    func sideMenus(){
+        
+        if revealViewController() != nil{
+            
+            btnMenu.target = revealViewController()
+            btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController().rearViewRevealWidth = 275
+            
+            view.addGestureRecognizer((self.revealViewController().panGestureRecognizer()))
 
+        }
+        
+    }
+    
+    
+    
 }
 
