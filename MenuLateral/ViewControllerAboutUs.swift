@@ -9,35 +9,28 @@
 import UIKit
 
 class ViewControllerAboutUs: UIViewController {
-    @IBOutlet weak var sectionType: UILabel!
+   
     @IBOutlet weak var lblAboutUs: UILabel!
-    
-    var sectionIndex = Int()
+    @IBOutlet weak var btnMenu: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        sideMenus()
         
-        if sectionIndex == 0{
-            print("Seccion 1")
-            sectionType.text = "About us"
-        }else{
-            print("Seccion 2")
-            sectionType.text = "Following"
-        }
-        view.addGestureRecognizer((self.revealViewController().panGestureRecognizer()))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func sideMenus() {
+ 
+        if revealViewController() != nil{
+ 
+            btnMenu.target = revealViewController()
+            btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController().rearViewRevealWidth = 275
+            view.addGestureRecognizer((self.revealViewController().panGestureRecognizer()))
+        }
+ 
     }
-    */
 
 }

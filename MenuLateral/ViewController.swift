@@ -9,25 +9,20 @@
 import UIKit
 
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+    
+    
+    
     @IBOutlet weak var btnMenu: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
         sideMenus()
         
-  
-        navigationController?.navigationBar.tintColor = UIColor.gray
-        
-        navigationController?.navigationBar.barTintColor = UIColor.gray
-        
-        navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.foregroundColor: UIColor.white]
     }
-
-    func sideMenus(){
+    
+    func sideMenus() {
         
         if revealViewController() != nil{
             
@@ -35,11 +30,12 @@ class ViewController: UIViewController {
             btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
             revealViewController().rearViewRevealWidth = 275
             
-            view.addGestureRecognizer((self.revealViewController().panGestureRecognizer()))
-
+         view.addGestureRecognizer((self.revealViewController().panGestureRecognizer()))
         }
         
     }
+
+    
     
     
     

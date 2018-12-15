@@ -52,8 +52,8 @@
 		33AF8DA721C40E34000916DF /* MenuLateralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLateralUITests.swift; sourceTree = "<group>"; };
 		33AF8DA921C40E34000916DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33AF8DB821C40F21000916DF /* MenuLateral-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MenuLateral-Bridging-Header.h"; sourceTree = "<group>"; };
-		33AF8DB921C40F22000916DF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../../Documents/SWRevealViewController/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
-		33AF8DBA21C40F22000916DF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../../Documents/SWRevealViewController/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		33AF8DB921C40F22000916DF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		33AF8DBA21C40F22000916DF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		33AF8DBC21C416EC000916DF /* TableViewCellCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCustom.swift; sourceTree = "<group>"; };
 		33AF8DBE21C41834000916DF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		33C96DBD21C43BFF002108BC /* ViewControllerAboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAboutUs.swift; sourceTree = "<group>"; };

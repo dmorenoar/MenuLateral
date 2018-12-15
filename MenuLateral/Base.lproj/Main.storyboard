@@ -31,10 +31,19 @@
         <!--View Controller-->
         <scene sceneID="OrU-jy-9TA">
             <objects>
-                <viewController id="Hfj-kp-6c0" customClass="ViewController" customModule="MenuLateral" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="Hfj-kp-6c0" customClass="ViewController" customModule="MenuLateral" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Nd-Kr-WE5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBk-p2-Oj0">
+                                <rect key="frame" x="166" y="243" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="81t-tB-Sga"/>
                     </view>
@@ -93,20 +102,13 @@
         <!--View Controller About Us-->
         <scene sceneID="W4b-ap-ygN">
             <objects>
-                <viewController id="vmj-NQ-aJh" customClass="ViewControllerAboutUs" customModule="MenuLateral" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aboutUs" id="vmj-NQ-aJh" customClass="ViewControllerAboutUs" customModule="MenuLateral" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yxB-8E-pAO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UU-I1-Vdj">
-                                <rect key="frame" x="162" y="189" width="213" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sección" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvp-xV-42o">
-                                <rect key="frame" x="146" y="85" width="61" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvp-xV-42o">
+                                <rect key="frame" x="153" y="133" width="69" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -116,9 +118,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tXg-Ci-pNK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FBR-09-vie">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="M8d-Ap-n55"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="btnMenu" destination="M8d-Ap-n55" id="5ja-V9-UUo"/>
                         <outlet property="lblAboutUs" destination="Cvp-xV-42o" id="Yd5-4e-BZx"/>
-                        <outlet property="sectionType" destination="7UU-I1-Vdj" id="gts-Jb-5iX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYJ-D5-YiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
