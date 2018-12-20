@@ -8,6 +8,7 @@
 
 import UIKit
 
+var tools:Tools = Tools()
 
 class ViewController: UIViewController{
     
@@ -18,26 +19,10 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sideMenus()
-        
+        tools.sideMenus(revealController: revealViewController(), btnMenu: btnMenu, view: view, vc: self)
+  
     }
-    
-    func sideMenus() {
-        
-        if revealViewController() != nil{
-            
-            btnMenu.target = revealViewController()
-            btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
-            revealViewController().rearViewRevealWidth = 275
-            
-         view.addGestureRecognizer((self.revealViewController().panGestureRecognizer()))
-        }
-        
-    }
-
-    
-    
-    
+     
     
 }
 

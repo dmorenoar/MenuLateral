@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3370679921CB7FA000A6E735 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370679821CB7FA000A6E735 /* Tools.swift */; };
 		33AF8D8821C40E33000916DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF8D8721C40E33000916DF /* AppDelegate.swift */; };
 		33AF8D8A21C40E33000916DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF8D8921C40E33000916DF /* ViewController.swift */; };
 		33AF8D8D21C40E33000916DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AF8D8B21C40E33000916DF /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3370679821CB7FA000A6E735 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		33AF8D8421C40E33000916DF /* MenuLateral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuLateral.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AF8D8721C40E33000916DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33AF8D8921C40E33000916DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				33AF8D8721C40E33000916DF /* AppDelegate.swift */,
+				3370679821CB7FA000A6E735 /* Tools.swift */,
 				33AF8D8921C40E33000916DF /* ViewController.swift */,
 				33AF8DBA21C40F22000916DF /* SWRevealViewController.h */,
 				33AF8DB921C40F22000916DF /* SWRevealViewController.m */,
@@ -277,6 +280,7 @@
 				33AF8D8821C40E33000916DF /* AppDelegate.swift in Sources */,
 				33C96DBE21C43BFF002108BC /* ViewControllerAboutUs.swift in Sources */,
 				33AF8DBD21C416EC000916DF /* TableViewCellCustom.swift in Sources */,
+				3370679921CB7FA000A6E735 /* Tools.swift in Sources */,
 				33AF8DBF21C41834000916DF /* TableViewController.swift in Sources */,
 				33AF8DBB21C40F22000916DF /* SWRevealViewController.m in Sources */,
 			);
